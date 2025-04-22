@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Delivery Tracker</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Maps API (replace YOUR_API_KEY with your actual API key) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  </head>
+  <body onload="initMap()">
+    <header>
+      <h1>Delivery Tracker</h1>
+    </header>
+    <div class="content">
+      <h2>Track your delivery</h2>
+      <p>View the route from the farm to your location.</p>
+      <div id="map"></div>
+      <button class="btn" onclick="alert('Your delivery is on its way!')">Track Status</button>
+    </div>
+    <footer>
+      <p>&copy; 2025 Delivery Tracker. All Rights Reserved.</p>
+    </footer>
+    <!-- Link to External JS File -->
+    <script src="script.js"></script>
+  </body>
+</html>
